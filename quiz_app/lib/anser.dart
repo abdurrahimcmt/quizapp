@@ -8,13 +8,17 @@ class Anser extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: double.maxFinite,
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 50.0),
+      width: double.infinity,
       child: ElevatedButton(
-        child: Text(
-          anser,
-          style: const TextStyle(
-            fontSize: 20,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            anser,
+            style: const TextStyle(
+              fontSize: 20,
+            ),
           ),
         ),
         onPressed: ansQuestion,
